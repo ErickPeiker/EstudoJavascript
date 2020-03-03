@@ -1,0 +1,27 @@
+{
+  "name": "JavascriptES6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "8.0.0-beta.0",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development -w",
+    "build": "webpack  --mode=production",
+    "array": "babel ./Funcionalidades/arrayFunctions.js -o ./bundle.js -w",
+    "arrow": "babel ./Funcionalidades/arrowFunctions.js -o ./bundle.js -w",
+    "default": "babel ./Funcionalidades/defaultValue.js -o ./bundle.js -w",
+    "desestruturacao": "babel ./Funcionalidades/desestruturacao.js -o ./bundle.js -w",
+    "operators": "babel ./Funcionalidades/operators.js -o ./bundle.js -w",
+    "template": "babel ./Funcionalidades/templateLiterals.js -o ./bundle.js -w",
+    "short": "babel ./Funcionalidades/objectShort.js -o ./bundle.js -w"
+  }
+}
